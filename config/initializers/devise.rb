@@ -80,7 +80,7 @@ Devise.setup do |config|
   # Turn scoped views on. Before rendering "sessions/new", it will first check for
   # "users/sessions/new". It's turned off by default because it's slower if you
   # are using only default views.
-  # config.scoped_views = false
+   config.scoped_views = true
 
   # The default HTTP method used to sign out a resource. Default is :delete.
   config.sign_out_via = :delete
