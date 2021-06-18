@@ -1,5 +1,8 @@
 <% if current_user.present? %>
     <p>Welcom! Your email address is <%= current_user.email %></p>
+    <% if current_user.admin.present? %>
+    <p>あなたは管理者です。</p>
+    <% end %>
 <% end %>
 
 <h1>Users#index</h1>
